@@ -54,6 +54,12 @@ This project focuses on using efficient **deep learning methods** to predict cro
 
 ---
 
+## 📊 **R² Bar Chart**
+
+The bar chart below compares the R² values of all models. **FNN** and **LSTM** perform the best, with the highest R² values (83.79% and 83.15%, respectively), followed closely by **CNN** with an R² value of **82.72%**. On the other hand, **RNN** and **MLP** have the lowest R² values, indicating their relatively weaker performance in terms of explaining the variance in crop yield predictions.
+
+![R² Bar Chart](scatter_plot_images/r2.png)
+
 ## 📈 **Scatter Plots**
 The scatter plots below illustrate the relationship between the predicted and actual crop yields for each model. Ideally, points should align closely with the diagonal line \(y = x\), indicating perfect predictions.
 
@@ -73,7 +79,7 @@ The scatter plots below illustrate the relationship between the predicted and ac
 ![RNN Scatter Plot](scatter_plot_images/RNN_plot.png)
 
 ### **Multi-Layer Perceptron (MLP)**
-![MLP Scatter Plot](images/MLP_plot.png)
+![MLP Scatter Plot](scatter_plot_images/MLP_plot.png)
 
 ---
 
