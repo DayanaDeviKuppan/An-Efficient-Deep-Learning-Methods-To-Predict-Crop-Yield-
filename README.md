@@ -1,28 +1,28 @@
-# **An Efficient Deep Learning Method to Predict Crop Yield**
+# 🌾 **An Efficient Deep Learning Method to Predict Crop Yield**
 
-## **Project Overview**
-This project focuses on using efficient deep learning methods to predict crop yields accurately. Models like Feed Forward Neural Networks (FNN), Long Short-Term Memory (LSTM), Convolutional Neural Networks (CNN), Gated Recurrent Unit (GRU), Recurrent Neural Network (RNN), Multi Layer Perceptron (MLP) were evaluated for their ability to analyze agricultural and environmental data, offering insights for sustainable agriculture.
+## 📜 **Project Overview**
+This project focuses on using efficient **deep learning methods** to predict crop yields accurately. Models like Feed Forward Neural Networks (FNN), Long Short-Term Memory (LSTM), Convolutional Neural Networks (CNN), Gated Recurrent Unit (GRU), Recurrent Neural Network (RNN), Multi Layer Perceptron (MLP) were evaluated for their ability to analyze agricultural and environmental data, offering insights for sustainable agriculture.
 
----
-
-## **Features**
-- Crop yield prediction using key factors such as crop type, season, area, prodction ,state ,crop year, rainfall,  pesticide and fertilizer use.  
-- Comparison of multiple deep learning models for accuracy and performance.  
-- Utilization of evaluation metrics like MAE, MSE, and R².  
-- Visual representation of results using scatterplots and R² analysis.  
+### **Key Highlights:**
+- Evaluation of models: **FNN**, **LSTM**, **CNN**, **GRU**, **RNN**, and **MLP**.
+- Dataset includes essential features like crop type, season, area, production,rainfall and environmental conditions.
+- Metrics like **MAE**, **MSE**, and **R²** are used for performance evaluation.
+- Visualizations for better understanding of model performance and results.
 
 ---
 
-## **Dataset**
-- **Source**: Kaggle Indian Agriculture Crop Production database.  
-- **Size**: 19,689 entries with 10 key columns.  
-- **Key Features**:  
-  - Crop Type, Season, State, Area, Production, Crop Year, Rainfall, Fertilizer & Pesticide Usage.  
-  - Target Variable: Crop Yield (tons/ha).  
+## 📊 **Dataset**
+- **Source**: Kaggle - Indian Agriculture Crop Production database.
+- **Size**: 19,689 entries across 10 columns.
+- **Key Features**:
+  - `Crop Type`, `Season`, `State`, `Area`, `Production`, `Crop Year`
+  - Environmental factors: `Rainfall`, `Fertilizer & Pesticide Usage`
+- **Target Variable**: `Crop Yield` (tons/ha).
 
 ---
 
-## **System Workflow**
+## ⚙️ **System Workflow**
+
 1. **Data Collection**: Extract data from reliable agricultural sources.  
 2. **Data Preprocessing**:  
    - **Scaling Numerical Features**: Normalize values to a comparable range (e.g., 0 to 1).  
@@ -41,45 +41,77 @@ This project focuses on using efficient deep learning methods to predict crop yi
 
 ---
 
-## **Key Results**
-| **Model**              | **MAE**   | **MSE**   | **R²**    | **Interpretation**                                                                                   |
-|------------------------|-----------|-----------|-----------|------------------------------------------------------------------------------------------------------|
-| **FNN**                | 0.03688   | 0.1656    | 83.79%    | Best performer, capturing complex relationships and showing strong generalization.                  |
-| **LSTM**               | 0.02746   | 0.1722    | 83.15%    | Excellent for temporal data, capturing trends effectively.                                          |
-| **CNN**                | 0.02538   | 0.1766    | 82.72%    | Excels in spatial feature analysis but lacks temporal modeling.                                     |
-| **GRU**                | 0.04062   | 0.2397    | 76.55%    | Simpler than LSTM, leading to faster training but slightly less accurate predictions.               |
-| **RNN**                | 0.05598   | 0.5127    | 49.84%    | Moderate accuracy, struggling with long-term dependencies.                                          |
-| **MLP**                | 0.05448   | 0.5369    | 47.47%    | Lowest performance due to its simpler architecture, serving as a baseline.                          |
+## 🤖 **Deep Learning Models and Results**
+
+| **Model**  | **MAE**    | **MSE**   | **R²**    | **Notes**                                             |
+|------------|------------|-----------|-----------|------------------------------------------------------|
+| **FNN**    | 0.03688    | 0.1656    | 83.79%    | Best performer, capturing complex relationships.     |
+| **LSTM**   | 0.02746    | 0.1722    | 83.15%    | Excels at capturing temporal trends.                 |
+| **CNN**    | 0.02538    | 0.1766    | 82.72%    | Effective in spatial feature analysis.               |
+| **GRU**    | 0.04062    | 0.2397    | 76.55%    | Lightweight alternative to LSTM with good accuracy.  |
+| **RNN**    | 0.05598    | 0.5127    | 49.84%    | Struggles with long-term dependencies.               |
+| **MLP**    | 0.05448    | 0.5369    | 47.47%    | Baseline performance due to simpler architecture.    |
 
 ---
 
-## **Libraries Used**
-1. **Deep Learning**:  
-   - TensorFlow, Keras, PyTorch.  
-2. **Data Processing**:  
-   - Pandas, NumPy, Scikit-learn.  
-3. **Visualization**:  
-   - Matplotlib, Seaborn.  
+## 📈 **Scatter Plots**
+The scatter plots below illustrate the relationship between the predicted and actual crop yields for each model. Ideally, points should align closely with the diagonal line \(y = x\), indicating perfect predictions.
+
+### **Feed Forward Neural Network (FNN)**
+![FNN Scatter Plot](images/FNN_plot.png)
+
+### **Long Short-Term Memory (LSTM)**
+![LSTM Scatter Plot](images/LSTM_plot.png)
+
+### **Convolutional Neural Network (CNN)**
+![CNN Scatter Plot](images/CNN_plot.png)
+
+### **Gated Recurrent Unit (GRU)**
+![GRU Scatter Plot](images/GRU_plot.png)
+
+### **Recurrent Neural Network (RNN)**
+![RNN Scatter Plot](images/RNN_plot.png)
+
+### **Multi-Layer Perceptron (MLP)**
+![MLP Scatter Plot](images/MLP_plot.png)
 
 ---
 
-## **System Requirements**
-### **Hardware**:  
-- Processor: Intel Core i7/i9 or AMD Ryzen 7/9.  
-- RAM: Minimum 8GB, recommended 16GB.  
-- Storage: 256GB SSD (minimum), 512GB SSD (recommended).  
-
-### **Software**:  
-- IDE: Google Colab (GPU-enabled).  
-- Language: Python 3.  
+## 💡 **Observations**
+- Models like **FNN**, **LSTM**, and **CNN** show a tight clustering of points around the diagonal, indicating strong performance.
+- **GRU**, **RNN**, and **MLP** display higher dispersion, suggesting a reduced predictive accuracy.
 
 ---
 
-## **Future Work**
-1. **Integration of Additional Data Sources**:  
-   - Include real-time data (e.g., soil health, microclimates).  
-2. **Regional and Crop-Specific Models**:  
-   - Develop models tailored to specific crops and regions for improved accuracy.  
+
+## 📚 **Libraries and Tools**
+- **Deep Learning**: TensorFlow, Keras, PyTorch
+- **Data Processing**: Pandas, NumPy, Scikit-learn
+- **Visualization**: Matplotlib, Seaborn
 
 ---
+
+## 🖥️ **System Requirements**
+
+### **Hardware**
+- **Processor**: Intel Core i7/i9 or AMD Ryzen 7/9.
+- **RAM**: Minimum 8GB (16GB recommended).
+- **Storage**: 256GB SSD (minimum), 512GB SSD (recommended).
+
+### **Software**
+- **IDE**: Google Colab (GPU-enabled).
+- **Programming Language**: Python 3.
+
+---
+
+## 🔮 **Future Work**
+1. **Integration of Real-Time Data**:
+   - Include live data like soil health and microclimates.
+2. **Regional and Crop-Specific Models**:
+   - Tailor models for specific crops and regions to improve accuracy.
+
+
+---
+
+
 
