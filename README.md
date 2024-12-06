@@ -84,6 +84,7 @@ The scatter plots below illustrate the relationship between the predicted and ac
 ---
 
 ## 💡 **Observations**
+- The R² Bar Chart shows that FNN and LSTM perform the best with the highest R² values, followed by CNN, while RNN and MLP perform the worst.
 - Models like **FNN**, **LSTM**, and **CNN** show a tight clustering of points around the diagonal, indicating strong performance.
 - **GRU**, **RNN**, and **MLP** display higher dispersion, suggesting a reduced predictive accuracy.
 
