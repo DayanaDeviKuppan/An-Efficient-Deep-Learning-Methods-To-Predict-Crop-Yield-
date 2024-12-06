@@ -58,19 +58,19 @@ This project focuses on using efficient **deep learning methods** to predict cro
 The scatter plots below illustrate the relationship between the predicted and actual crop yields for each model. Ideally, points should align closely with the diagonal line \(y = x\), indicating perfect predictions.
 
 ### **Feed Forward Neural Network (FNN)**
-![FNN Scatter Plot](images/FNN_plot.png)
+![FNN Scatter Plot](scatter_plot_images/FNN_plot.png)
 
 ### **Long Short-Term Memory (LSTM)**
-![LSTM Scatter Plot](images/LSTM_plot.png)
+![LSTM Scatter Plot](scatter_plot_images/LSTM_plot.png)
 
 ### **Convolutional Neural Network (CNN)**
-![CNN Scatter Plot](images/CNN_plot.png)
+![CNN Scatter Plot](scatter_plot_images/CNN_plot.png)
 
 ### **Gated Recurrent Unit (GRU)**
-![GRU Scatter Plot](images/GRU_plot.png)
+![GRU Scatter Plot](scatter_plot_images/GRU_plot.png)
 
 ### **Recurrent Neural Network (RNN)**
-![RNN Scatter Plot](images/RNN_plot.png)
+![RNN Scatter Plot](scatter_plot_images/RNN_plot.png)
 
 ### **Multi-Layer Perceptron (MLP)**
 ![MLP Scatter Plot](images/MLP_plot.png)
